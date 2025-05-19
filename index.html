@@ -9,8 +9,13 @@
 </head>
 
 <body>
-
     <h2>Mark Attendance</h2>
+
+    <!-- 📍 Button to manually fetch location -->
+<button type="button" id="getLocationBtn">📍 Fetch My Location</button>
+
+<!-- 📍 Display location fetch status -->
+<div id="locationStatus" style="color: red; margin: 10px 0;">Location not fetched yet.</div>
 
     <form id="attendanceForm">
         <label for="name">Name:</label>
@@ -25,29 +30,29 @@
             <option value="Absent">Absent</option>
             <option value="Late">Late</option>
         </select>
-        <!-- After Status -->
+
         <label for="location">Location:</label>
         <select id="location" name="location" required>
             <option value="Delhi">Delhi</option>
             <option value="Bangalore">Bangalore</option>
             <option value="Chennai">Chennai</option>
-            <option value="Chennai">Hyderabad</option>
+            <option value="Hyderabad">Hyderabad</option>
         </select>
-
 
         <label for="remarks">Remarks:</label>
         <textarea id="remarks" name="remarks" rows="3"></textarea>
+
+        <!-- Hidden field for full address -->
+        <input type="hidden" id="fullAddress" name="fullAddress">
 
         <button type="submit">Submit Attendance</button>
     </form>
 
     <div class="message" id="message"></div>
-    <div class="message" id="message"></div>
     <div class="loading" id="loading" style="display: none;">Submitting...</div>
 
-
+    <!-- JavaScript -->
     <script src="script.js"></script>
-
 </body>
 
 </html>
