@@ -1,37 +1,43 @@
 body {
-            font-family: Arial, sans-serif;
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
-        input,
-        select,
-        textarea,
-        button {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-        }
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
 
-        button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
 
-        button:hover {
-            background-color: #218838;
-        }
+button:hover {
+    background-color: #218838;
+}
 
-        .message {
-            margin-top: 15px;
-            font-weight: bold;
-        }
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.loading {
+    font-weight: bold;
+    color: #218838;
+    margin-top: 10px;
+}
