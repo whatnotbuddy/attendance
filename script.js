@@ -12,7 +12,7 @@
             };
 
             try {
-                const response = await fetch('http://attendance-clk6.onrender.com/mark-attendance', {
+                const response = await fetch('https://attendance-clk6.onrender.com/mark-attendance', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
