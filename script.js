@@ -12,7 +12,7 @@
             };
 
             try {
-                const response = await fetch('http://213.210.36.19:5050/mark-attendance', {
+                const response = await fetch('http://attendance-clk6.onrender.com:5050/mark-attendance', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
