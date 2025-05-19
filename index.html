@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Attendance Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Mark Attendance</h2>
+
+    <form id="attendanceForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
+            <option value="Late">Late</option>
+        </select>
+
+        <label for="remarks">Remarks:</label>
+        <textarea id="remarks" name="remarks" rows="3"></textarea>
+
+        <button type="submit">Submit Attendance</button>
+    </form>
+
+    <div class="message" id="message"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
