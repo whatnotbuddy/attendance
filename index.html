@@ -25,6 +25,14 @@
             <option value="Absent">Absent</option>
             <option value="Late">Late</option>
         </select>
+        <!-- After Status -->
+        <label for="location">Location:</label>
+        <select id="location" name="location" required>
+            <option value="Delhi">Delhi</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+        </select>
+
 
         <label for="remarks">Remarks:</label>
         <textarea id="remarks" name="remarks" rows="3"></textarea>
@@ -33,6 +41,9 @@
     </form>
 
     <div class="message" id="message"></div>
+    <div class="message" id="message"></div>
+    <div class="loading" id="loading" style="display: none;">Submitting...</div>
+
 
     <script src="script.js"></script>
 
